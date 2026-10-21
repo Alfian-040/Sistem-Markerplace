@@ -22,3 +22,14 @@ Buka alamat yang tertulis di Terminal (biasanya http://localhost:5173).
 ## Mengembalikan data awal
 
 Buka DevTools browser > Application > Local Storage, hapus kunci yang diawali "pasarumkm-", lalu muat ulang.
+
+## Khusus Windows
+
+1. Install Node.js (LTS) dari https://nodejs.org jika belum ada.
+2. Ekstrak zip ini, lalu buka folder `marketplace-umkm-v3` di VS Code (File > Open Folder).
+3. Buka Terminal (Ctrl + `) lalu jalankan:
+
+       npm install
+       npm run dev
+
+4. Buka http://localhost:5173 di browser.

@@ -1,4 +1,4 @@
-// Foto profil bulat. Jika foto kosong, tampil ikon orang sebagai pengganti.
+
 export default function Avatar({ foto, size = 64, nama = "" }) {
   const gaya = {
     width: size,
