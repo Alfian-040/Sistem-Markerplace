@@ -5,7 +5,6 @@ import Beranda from "../pages/publik/Beranda";
 import DetailProduk from "../pages/publik/DetailProduk";
 import Toko from "../pages/publik/Toko";
 import Masuk from "../pages/publik/Masuk";
-import Daftar from "../pages/publik/Daftar";
 import DaftarPembeli from "../pages/publik/DaftarPembeli";
 import DaftarPenjual from "../pages/publik/DaftarPenjual";
 import Keranjang from "../pages/pembeli/Keranjang";
@@ -67,7 +66,9 @@ export default function AppRoutes() {
       <Route path="/produk/:id" element={<DetailProduk />} />
       <Route path="/toko/:id" element={<Toko />} />
       <Route path="/masuk" element={<Masuk />} />
-      <Route path="/daftar" element={<Daftar />} />
+
+      {/* Pendaftaran dipisah: pembeli (tombol Daftar, kanan) dan penjual (tautan di kiri Navbar) */}
+      <Route path="/daftar" element={<Navigate to="/daftar/pembeli" replace />} />
       <Route path="/daftar/pembeli" element={<DaftarPembeli />} />
       <Route path="/daftar/penjual" element={<DaftarPenjual />} />
 

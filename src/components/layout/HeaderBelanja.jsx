@@ -30,6 +30,9 @@ export default function HeaderBelanja() {
   // halaman penjual dan pemilik tidak memakai kotak belanja
   if (pathname.startsWith("/penjual") || pathname.startsWith("/pemilik")) return null;
 
+  // Masuk, Daftar pembeli, dan Daftar penjual juga tanpa kotak belanja (seperti Shopee)
+  if (pathname === "/masuk" || pathname.startsWith("/daftar")) return null;
+
   const diBeranda = pathname === "/";
   const aktif = diBeranda ? katParam : null;
   const alamat = (kataBaru, kategori) => {

@@ -2,7 +2,7 @@ import { NavLink, Outlet } from "react-router-dom";
 
 export default function LayoutDashboard({ judul, menu }) {
   return (
-    <div className="dash container">
+    <div className="dash">
       <aside className="dash-side">
         <p className="dash-judul">{judul}</p>
         {menu.map((m) => (
